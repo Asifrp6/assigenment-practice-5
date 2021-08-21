@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makbook Shop</title>
+    <!--tailwindcss link -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section class="">
+            <div class="grid grid-cols-2 ">
+                <div class="mt-5  flex justify-center"><img src="images/mac.png" alt=""
+                        style="height: 300px; width: 300px;">
+                </div>
+                <div class="mt-5 flex flex-col w-100">
+                    <h1 class="text-3xl font-semibold mb-5 w-3/4">Customize your Blue 24-inch iMac with Apple M1 chip.
+                    </h1>
+                    <p class="w-3/4">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores,
+                        7-core GPU, and
+                        16-core Neural Engine.</p>
+                    <div class="mt-5">
+                        <h1 class="mb-5 text-2xl font-medium">Memory</h1>
+                        <!-- button for 8gb memory -->
+                        <button id="memory8gb" value="0"
+                            class="bg-transparent hover:bg-blue-400 text-blue-400 font-medium hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded ">8GB
+                            unified memory</button>
+
+                        <!-- button for 16 gb memory -->
+                        <button id="memory16gb" value="180"
+                            class="bg-transparent hover:bg-blue-400 text-blue-400 font-medium hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">16GB
+                            unified memory</button>
+                    </div>
+                    <div class="mt-5">
+                        <h1 class="mb-5 text-2xl font-medium">Storage</h1>
+
+                        <!-- button for 256gb storage -->
+                        <button id="storage256gb" value="0"
+                            class="bg-transparent hover:bg-blue-400 text-blue-400 font-medium hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded ">256GB
+                            SSD storage</button>
+
+                        <!-- button for 512gb storage -->
+                        <button id="storage512gb" value="100"
+                            class="bg-transparent hover:bg-blue-400 text-blue-400 font-medium hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded ">512GB
+                            storage</button>
+
+                        <!-- button for 1tb storage -->
+                        <button id="storage1tb" value="180"
+                            class="bg-transparent hover:bg-blue-400 text-blue-400 font-medium hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded ">1TB
+                            SSD storage</button>
+                    </div>
+                    <div class="mt-5">
+                        <h1 class="mb-5 text-2xl font-medium">Choose your delivery option</h1>
+
+                        <!-- button free delivery -->
+                        <button id="freedelivery" value="0"
+                            class="bg-transparent hover:bg-blue-400 text-blue-400 font-medium hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded ">Friday,Aug
+                            25 FREE Prime Delivery</button>
+
+                        <!-- button pay with delivery -->
+                        <button id="paiddelivery" value="20"
+                            class="bg-transparent hover:bg-blue-400 text-blue-400 font-medium hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">Friday,Aug
+                            21 Delivery Charge</button>
+                    </div>
+                    <div class="mt-5">
+                        <!-- mak book price -->
+                        <h1 class="text-xl">Best Price $ <span id="bestPrice">1299</span> </h1>
+                        <hr class="w-2/4 bg bg-blue-800">
+
+                        <!-- for memory price -->
+                        <h1 class="text-xl">Extra Memory Cost $<span id="extraMempryCost">0</span></h1>
+
+                        <!-- storage price -->
+                        <h1 class="text-xl"> Extra Storage Cost $<span id="extraStorageCost">0</span></h1>
+                        <hr class="w-2/4 bg bg-blue-800">
+
+                        <!-- delivery charge -->
+                        <h1 class="text-xl">Delivery change $<span id="deliverCharge">0</span></h1>
+                        <hr class="w-2/4 bg bg-blue-800">
+
+                        <!-- total price -->
+                        <h1 class="text-xl">Total Price $<span id="totalprice">1299</span></h1>
+
+                        <!-- for promo code -->
+                        <input id="promoCode" type="text" placeholder="Add Promo code">
+                        <button id="apply"
+                            class="bg-transparent hover:bg-blue-400 text-blue-400 font-medium hover:text-white py-2 px-2 border border-blue-500 hover:border-transparent rounded">Apply</button>
+
+                    </div>
+                </div>
+            </div>
+            <!-- price with promo code -->
+            <h1 class="flex justify-center items-center text-3xl">Total = $<span id="total">1299</span></h1>
+        </section>
+    </main>
+    <!-- script file link setup -->
+    <script src="makbook.js"></script>
+</body>
+
+</html>
